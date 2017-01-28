@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ngMaterial']);
 
 app.config(function($routeProvider, $locationProvider) {
 
@@ -26,7 +26,10 @@ app.config(function($routeProvider, $locationProvider) {
     })
     .when('/shop', {
       templateUrl: 'partials/shop.html'
-    });
+    })
+    .otherwise('/',{
+      redirectTo : '/'
+    })
 
   $locationProvider.html5Mode(true);
 });
