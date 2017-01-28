@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/stylesheets/input.css" />
     <title>C Factory Systems</title>
+    <base href="/" />
   </head>
   <body>
+    <header>
+      <div>
+        <nav>
+          <a href="/" class="brand-logo">C Factory Systems</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="nav-li"><a href="/products">Products</a></li>
+            <li class="nav-li"><a href="/partners">Partners</a></li>
+            <li class="nav-li"><a href="/magic">The Magic</a></li>
+            <li class="nav-li"><a href="/faqs">FAQs</a></li>
+            <li class="nav-li"><a href="/shop">Shop</a></li>
+            <li class="nav-li"><a href="/about">About</a></li>
+            <li class="nav-li"><a href="/contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <h1>Hello this is a test!</h1>
-
+    <main ng-view>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
