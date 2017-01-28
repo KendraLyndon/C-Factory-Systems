@@ -1,13 +1,40 @@
-/* reset default styling */
+.title-container {
+  background-image: url("../img/cfs-text-color-vertical.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 75vw;
+  margin: 25vh auto 0 auto; }
+
+.subtitle {
+  margin-top: 10vh;
+  text-align: center; }
+
+/* every page high level */
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  list-style: none; }
+  list-style: none;
+  color: #2A2B2B; }
+
+html {
+  background: url("../img/sky.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 body {
-  background-image: url("../img/sky.jpg");
-  background-size: cover; }
+  background: none; }
+
+main {
+  min-height: 85vh;
+  background: none; }
+
+/* generic color styling */
+.cfs-teal {
+  background-color: #12AD8D; }
 
 /* header and nav styling */
 header {
@@ -35,5 +62,14 @@ nav {
     height: 100%;
     padding: 0;
     text-align: center; }
+
+/* footer styling */
+#cfs-footer {
+  background-color: #12AD8D; }
+
+.cfs-footer-child {
+  padding: 0 12.5vw 0 12.5vw;
+  margin-left: 0;
+  margin-right: 0; }
 
 /*# sourceMappingURL=input.css.map */

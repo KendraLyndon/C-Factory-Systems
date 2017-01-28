@@ -1,16 +1,40 @@
 $primary-teal: #12AD8D;
+$med-grey: #4A4B4C;
+$dark-grey: #2A2B2B;
 
-/* reset default styling */
+@import 'sass_partials/home';
+
+/* every page high level */
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   list-style: none;
+  color: $dark-grey;
+}
+
+html {
+  background: url('../img/sky.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  background-image: url('../img/sky.jpg');
-  background-size: cover;
+  background: none;
+}
+
+main {
+  min-height: 85vh;
+  background: none;
+}
+
+/* generic color styling */
+
+.cfs-teal {
+  background-color: $primary-teal;
 }
 
 /* header and nav styling */
@@ -46,4 +70,16 @@ nav {
     padding: 0;
     text-align: center;
   }
+}
+
+/* footer styling */
+
+#cfs-footer {
+  background-color: $primary-teal;
+}
+
+.cfs-footer-child {
+  padding: 0 12.5vw 0 12.5vw;
+  margin-left: 0;
+  margin-right: 0;
 }
