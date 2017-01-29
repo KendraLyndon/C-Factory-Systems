@@ -6,6 +6,9 @@
   width: 75vw;
   margin: 20vh auto 0 auto; }
 
+.card-text {
+  margin-bottom: 15px; }
+
 /* every page high level */
 * {
   margin: 0;

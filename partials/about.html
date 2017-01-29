@@ -1,1 +1,14 @@
 <h2 class="subtitle">About</h2>
+<div layout="row" layout-align="space-around">
+  <div ng-repeat="member in vm.team" flex="20">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{member.photo}}">
+        <span class="card-title">{{member.name}}</span>
+      </div>
+      <div class="card-content">
+        <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+      </div>
+    </div>
+  </div>
+</div>
