@@ -4,9 +4,10 @@
     <div class="card">
       <div class="card-image">
         <img src="{{member.photo}}">
-        <span class="card-title">{{member.name}}</span>
       </div>
       <div class="card-content">
+        <h4 class="card-title">{{member.name}}</h4>
+        <h6 class="card-title">{{member.title}}</h6>
         <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
       </div>
     </div>
