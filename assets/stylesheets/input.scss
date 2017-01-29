@@ -15,11 +15,12 @@ $dark-grey: #2A2B2B;
 }
 
 html {
-  background: url('../img/sky.jpg') no-repeat center center fixed;
+  background: url('../img/sky-transparent.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  // filter: blur(5px);
 }
 
 body {
@@ -29,6 +30,16 @@ body {
 main {
   min-height: 85vh;
   background: none;
+}
+
+section {
+  padding-left: 12.5vw;
+  padding-right: 12.5vw;
+}
+
+.subtitle {
+  margin-top: 10vh;
+  text-align: center;
 }
 
 /* generic color styling */
@@ -57,8 +68,9 @@ header {
 }
 
 nav {
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 10vh;
   background-color: $primary-teal;
 }
 
@@ -82,4 +94,8 @@ nav {
   padding: 0 12.5vw 0 12.5vw;
   margin-left: 0;
   margin-right: 0;
+}
+
+.footer-company-name {
+  margin-bottom: 1.5em;
 }
