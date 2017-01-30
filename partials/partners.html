@@ -1,5 +1,20 @@
 <h2 class="subtitle">Partner Stores</h2>
 
-<p>
-  You can see our products in action at one of our partner stores. Click on the logo or enter your zip code for the closest partner store near you.
-</p>
+<section role="search">
+  <p class="partner-text">
+    You can see our products in action at one of our partner stores. Click on the logo or enter your zip code for the closest partner store near you.
+  </p>
+  <div layout="row">
+    <div class="logo-container" flex="auto">
+      <img class="logo-placeholder" src="http://placehold.it/400x200?text=logo+placeholder" alt="logo placeholder">
+    </div>
+    <form class="partners-search" flex="60" layout="row" action="#" method="get">
+      <label for="search" flex="90">
+        <input type="search" name="s" id="partners-search-input" placeholder="Zipcode" maxlength="200" />
+      </label>
+      <button type="submit" title="Search submit" class="search-button" flex="auto">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+</section>

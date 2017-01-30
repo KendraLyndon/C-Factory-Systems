@@ -1,0 +1,23 @@
+.partner-text {
+  font-size: 25px;
+  margin: 1em auto 1em auto;
+  text-align: center;
+  color: black;
+}
+
+#partners-search-input {
+  margin-left: 2em;
+  padding-left: 7px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  height: 35px;
+  display: inline-block;
+  background-color: white;
+}
+
+.search-button {
+  height: 35px;
+  border-radius: 0 2px 2px 0;
+  background-color: $light-grey;
+  color: $dark-grey;
+}
