@@ -17,7 +17,8 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl: 'partials/faqs.html'
     })
     .when('/magic', {
-      templateUrl: 'partials/magic.html'
+      templateUrl: 'partials/magic.html',
+      controller: 'MagicController'
     })
     .when('/partners', {
       templateUrl: 'partials/partners.html'
