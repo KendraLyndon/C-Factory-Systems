@@ -9,6 +9,15 @@
 .card-text {
   margin-bottom: 10px; }
 
+.section-product-description {
+  margin-top: 2em; }
+
+.product-text {
+  font-size: 25px;
+  margin: 1em auto 1em auto;
+  text-align: center;
+  color: black; }
+
 /* every page high level */
 * {
   margin: 0;
