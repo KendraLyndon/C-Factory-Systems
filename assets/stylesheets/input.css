@@ -58,6 +58,26 @@
 .category-title {
   margin: 5px auto 5px auto; }
 
+.denver-image {
+  width: 100%;
+  height: auto; }
+
+.contact-detail-icon {
+  display: inline-block;
+  height: 30px; }
+
+.contact-detail-mail {
+  font-size: 25px;
+  margin-left: 5px; }
+
+.contact-detail-mail:not(:first-child) {
+  margin-left: 40px; }
+
+.contact-detail-text {
+  margin: 0.5em 0 0 5px;
+  display: inline-block;
+  font-size: 25px; }
+
 /* every page high level */
 * {
   margin: 0;
