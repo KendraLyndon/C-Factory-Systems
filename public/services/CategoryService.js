@@ -70,8 +70,7 @@ app.factory('CategoryService', function(){
         type: 'Wine',
         photo: '../assets/img/Wine.jpg',
         description: ''
-      },
-
+      }
     ]
   }
 })
