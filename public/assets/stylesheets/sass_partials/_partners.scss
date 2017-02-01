@@ -1,12 +1,23 @@
+.logo-container {
+  img {
+    float: right;
+  }
+}
+
 .section-search {
   margin-top: 3em;
 }
 
+.search-container {
+  background-color: $med-grey;
+  padding: 2em;
+}
+
 .partner-text {
   font-size: 25px;
-  margin: 1em auto 1em auto;
+  margin: 0 auto 1em auto;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 #partners-search-input {
