@@ -80,6 +80,7 @@
 
 .category-title {
   text-align: center;
+  font-size: 20px !important;
   margin: 5px auto 5px auto; }
 
 .section-contact {
@@ -192,7 +193,7 @@ nav {
   background-color: #12AD8D; }
 
 .cfs-footer-child {
-  padding: 0 12.5vw 0 12.5vw;
+  padding: 0 12.5vw 1em 12.5vw;
   margin-left: 0;
   margin-right: 0; }
 
