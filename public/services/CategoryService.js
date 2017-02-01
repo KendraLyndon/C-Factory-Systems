@@ -42,6 +42,11 @@ app.factory('CategoryService', function(){
         description: ''
       },
       {
+        type: 'Medicine & Supplements',
+        photo: '../assets/img/Medicine-Supplements.jpg',
+        description: ''
+      },
+      {
         type: 'Seeds',
         photo: '../assets/img/Seeds.jpg',
         description: ''
