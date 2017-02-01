@@ -6,6 +6,9 @@
   width: 75vw;
   margin: 20vh auto 0 auto; }
 
+.section-about {
+  margin-top: 3em; }
+
 .card .about-content {
   padding: 5px; }
 
@@ -26,6 +29,9 @@
   margin: 0 auto 1em auto;
   text-align: justify;
   color: black; }
+
+.section-search {
+  margin-top: 3em; }
 
 .partner-text {
   font-size: 25px;
