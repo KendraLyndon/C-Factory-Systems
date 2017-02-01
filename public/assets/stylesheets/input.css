@@ -21,14 +21,21 @@
 .section-product-description {
   margin: 2em auto 2em auto; }
 
+.product-image-container {
+  margin-top: 2em; }
+  .product-image-container img {
+    float: right; }
+
 .product-container {
+  background-color: #4A4B4C;
+  padding: 2em;
   margin-top: 2em; }
 
 .product-text {
-  font-size: 27px;
+  font-size: 23px;
   margin: 0 auto 1em auto;
   text-align: justify;
-  color: black; }
+  color: white; }
 
 .section-search {
   margin-top: 3em; }

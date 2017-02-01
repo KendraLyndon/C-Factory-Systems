@@ -2,13 +2,23 @@
   margin: 2em auto 2em auto;
 }
 
+.product-image-container {
+  margin-top: 2em;
+
+  img {
+    float: right;
+  }
+}
+
 .product-container {
+  background-color: $med-grey;
+  padding: 2em;
   margin-top: 2em;
 }
 
 .product-text {
-  font-size: 27px;
+  font-size: 23px;
   margin: 0 auto 1em auto;
   text-align: justify;
-  color: black;
+  color: white;
 }
