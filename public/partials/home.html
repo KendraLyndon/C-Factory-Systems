@@ -1,3 +1,4 @@
+<!-- TITLE -->
 <section class="home-title-section">
   <div class="title-container">
   </div>
@@ -6,14 +7,10 @@
   <h5 class="subtitle">...and because we are the only active solution on the market, there is nothing to replace, nothing to monitor, ever. </h5> -->
 </section>
 
-<h2 class="subtitle"><img class="title-png" src="../assets/img/products-text.png" alt="Products"/></h2>
+<!-- PRODUCTS -->
 <section layout="row" class="section-product-description">
-  <div flex="40" class="product-image-container">
-    <img src="http://placehold.it/400x550?text=product+image" alt="placeholder"/>
-  </div>
-  <!-- <div flex="10" class="buffer-div">
-  </div> -->
   <div flex="60" class="product-container">
+    <h2 class="subtitle"><img class="title-png" src="../assets/img/products-text.png" alt="Products"/></h2>
     <p class="product-text">
       The Biosafe moves water vapor between the ambient air and the storage chamber as required for a specific humidity, automatically, and with no user action or maintenance required.
     </p>
@@ -24,12 +21,14 @@
       Automatic temperature control is also available.
     </p>
   </div>
+  <div flex="40" class="product-image-container">
+    <img src="http://placehold.it/400x550?text=product+image" alt="placeholder"/>
+  </div>
 </section>
 
-<h2 class="subtitle"><img class="title-png" src="../assets/img/partners-text.png" alt="Partner Stores"/></h2>
-
-<section role="search" class="section-search">
-
+<!-- PARTNERS -->
+<section role="search" class="section-partners">
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/partners-text.png" alt="Partner Stores"/></h2>
   <div layout="row">
     <div class="logo-container" flex="auto">
       <img class="logo-placeholder" src="http://placehold.it/425x250?text=logo+placeholder" alt="logo placeholder">
@@ -50,8 +49,8 @@
   </div>
 </section>
 
-<h2 class="subtitle"><img class="title-png" src="../assets/img/magic-text.png" alt="The Magic"/></h2>
 <section class="section-magic">
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/magic-text.png" alt="The Magic"/></h2>
   <div class="row">
     <div ng-repeat="category in vm.categories" | orderBy:'category.type' class="col s12 m3 l3">
       <div class="card category-card">
@@ -65,8 +64,8 @@
     </div>
 </section>
 
-<h2 class="subtitle"><img class="title-png" src="../assets/img/about-text.png" alt="About"/></h2>
 <section class="section-about">
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/about-text.png" alt="About"/></h2>
   <div layout="row" layout-align="space-around">
     <div ng-repeat="member in vm.team" flex="20">
       <div class="card">
@@ -83,36 +82,38 @@
   </div>
 </section>
 
-<h2 class="subtitle"><img class="title-png" src="../assets/img/contact-text.png" alt="Contact Us"/></h2>
-<section layout="row" class="section-contact">
-  <div flex="60" class="contact-image-container">
-    <img class="denver-image" src="../assets/img/Denver1.jpg" alt="Denver"/>
-  </div>
-  <div flex="40" class="contact-container valign-wrapper">
-    <div class="valign">
-      <div class="contact-detail">
-        <img class="contact-detail-icon" src="../assets/img/mailbox3.png" />
-        <p class="contact-detail-mail" id="contact-detail-mail-top">
-          C Factory Systems, Inc
-        </p>
-        <p class="contact-detail-mail">
-          PO Box 200787
-        </p>
-        <p class="contact-detail-mail">
-          Denver, CO 80230
-        </p>
-      </div>
-      <div class="contact-detail">
-        <i class="fa fa-envelope fa-2x contact-detail-icon" aria-hidden="true"></i>
-        <p class="contact-detail-text">
-          info@cfactorysystems.com
-        </p>
-      </div>
-      <div class="contact-detail">
-        <i class="fa fa-phone fa-2x contact-detail-icon" aria-hidden="true"></i>
-        <p class="contact-detail-text">
-          (303) 406-1210
-        </p>
+<section class="section-contact">
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/contact-text.png" alt="Contact Us"/></h2>
+  <div layout="row">
+    <div flex="60" class="contact-image-container">
+      <img class="denver-image" src="../assets/img/Denver1.jpg" alt="Denver"/>
+    </div>
+    <div flex="40" class="contact-container valign-wrapper">
+      <div class="valign">
+        <div class="contact-detail">
+          <img class="contact-detail-icon" src="../assets/img/mailbox3.png" />
+          <p class="contact-detail-mail" id="contact-detail-mail-top">
+            C Factory Systems, Inc
+          </p>
+          <p class="contact-detail-mail">
+            PO Box 200787
+          </p>
+          <p class="contact-detail-mail">
+            Denver, CO 80230
+          </p>
+        </div>
+        <div class="contact-detail">
+          <i class="fa fa-envelope fa-2x contact-detail-icon" aria-hidden="true"></i>
+          <p class="contact-detail-text">
+            info@cfactorysystems.com
+          </p>
+        </div>
+        <div class="contact-detail">
+          <i class="fa fa-phone fa-2x contact-detail-icon" aria-hidden="true"></i>
+          <p class="contact-detail-text">
+            (303) 406-1210
+          </p>
+        </div>
       </div>
     </div>
   </div>

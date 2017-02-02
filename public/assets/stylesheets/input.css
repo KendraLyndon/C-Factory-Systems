@@ -1,3 +1,6 @@
+.home-title-section {
+  height: 80vh; }
+
 .title-container {
   background-image: url("../img/cfs-text-black-vertical.png");
   background-size: contain;
@@ -40,7 +43,7 @@
 .logo-container img {
   float: right; }
 
-.section-search {
+.section-partners {
   margin-top: 3em; }
 
 .search-container {
@@ -144,10 +147,6 @@ body {
 main {
   min-height: 85vh;
   background: none; }
-
-section {
-  padding-left: 12.5vw;
-  padding-right: 12.5vw; }
 
 .subtitle {
   margin-top: 10vh;
