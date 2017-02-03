@@ -147,7 +147,8 @@
   height: auto; }
 
 .category-photo {
-  object-fit: cover; }
+  object-fit: cover;
+  overflow-x: hidden; }
 
 .card .category-content {
   padding: 5px; }
@@ -166,6 +167,9 @@
 
 .contact-alignment {
   height: 270px; }
+
+.contact-image-container {
+  overflow-x: hidden; }
 
 .denver-image {
   height: 100%;
