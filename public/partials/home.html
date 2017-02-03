@@ -26,6 +26,7 @@
       <img src="http://placehold.it/400x500?text=product+image" alt="placeholder"/>
     </div>
   </div>
+  <img class="corner-logo" src="../assets/img/cfs-logo-color.png" alt="logo" />
 </section>
 
 <!-- PARTNERS -->
@@ -50,6 +51,7 @@
       </form>
     </div>
   </div>
+  <img class="corner-logo" src="../assets/img/cfs-logo-color.png" alt="logo" />
 </section>
 
 <!-- THE MAGIC -->
@@ -73,38 +75,23 @@
 <section class="section-about">
   <a class="anchor" name="about"></a>
   <h2 class="subtitle"><img class="title-png" src="../assets/img/about-text-grey.png" alt="About"/></h2>
-    <div class="row">
-      <div ng-repeat="member in vm.team track by $index" class="col s12 m6 l3">
-        <div >
-            <div class="card">
-              <div class="card-image">
-                <img src="{{member.photo}}">
-              </div>
-              <div class="card-content about-content">
-                <h4 class="card-title">{{member.name}}</h4>
-                <h6 class="card-title member-title">{{member.title}}</h6>
-                <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
-              </div>
+  <div class="row">
+    <div ng-repeat="member in vm.team track by $index" class="col s12 m6 l3">
+      <div >
+          <div class="card">
+            <div class="card-image">
+              <img src="{{member.photo}}">
             </div>
-        </div>
+            <div class="card-content about-content">
+              <h4 class="card-title">{{member.name}}</h4>
+              <h6 class="card-title member-title">{{member.title}}</h6>
+              <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+            </div>
+          </div>
       </div>
     </div>
-    <!-- <div class="row">
-      <div ng-repeat="member in vm.team track by $index" class="col s12 m5 l5">
-        <div ng-if="$index > 1">
-            <div class="card">
-              <div class="card-image">
-                <img src="{{member.photo}}">
-              </div>
-              <div class="card-content about-content">
-                <h4 class="card-title">{{member.name}}</h4>
-                <h6 class="card-title member-title">{{member.title}}</h6>
-                <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div> -->
+  </div>
+  <img class="corner-logo" src="../assets/img/cfs-logo-color.png" alt="logo" />
 </section>
 
 <!-- CONTACT -->
@@ -146,4 +133,5 @@
       </div>
     </div>
   </div>
+  <img class="corner-logo" src="../assets/img/cfs-logo-color.png" alt="logo" />
 </section>
