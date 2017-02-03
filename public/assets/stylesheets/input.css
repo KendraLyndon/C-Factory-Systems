@@ -9,6 +9,26 @@
   width: 75vw;
   margin: 20vh auto 0 auto; }
 
+/* MEDIA QUERIES */
+/* SMALL */
+@media (max-width: 600px) {
+  .title-container {
+    width: 90vw; } }
+/* SMALL */
+@media (max-width: 500px) {
+  #home-subtitle {
+    font-size: 30px;
+    width: 90vw; } }
+/* X-SMALL */
+@media (max-width: 350px) {
+  .title-container {
+    width: 98vw;
+    height: 10em;
+    margin-top: 15vh; }
+
+  #home-subtitle {
+    font-size: 25px;
+    width: 95vw; } }
 .section-about {
   position: relative;
   margin-top: 3em;
@@ -187,7 +207,11 @@ section {
   padding: 5vh 12.5vw 3vh 12.5vw; }
 
 .subtitle {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center; }
+  .subtitle img {
+    max-width: 100%; }
 
 .page-subtitle {
   text-align: center;
@@ -247,14 +271,24 @@ nav {
 .footer-company-name {
   margin-bottom: 1.5em; }
 
+/* MEDIA QUERIES */
+/* MEDIUM */
 @media (max-width: 960px) {
   section {
-    padding: 5vh 8vw 3vh 8vw; } }
+    padding: 5vh 8vw 3vh 8vw; }
+
+  .subtitle {
+    width: 80vw; } }
 @media (max-width: 840px) {
   section {
     padding: 5vh 5vw 3vh 5vw; } }
+/* SMALL */
 @media (max-width: 600px) {
   section {
-    padding: 5vh 2% 3vh 2%; } }
+    padding: 5vh 2% 3vh 2%; }
+
+  .header-nav-list {
+    display: none; } }
+/* X-SMALL */
 
 /*# sourceMappingURL=input.css.map */

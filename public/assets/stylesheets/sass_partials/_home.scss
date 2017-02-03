@@ -10,3 +10,35 @@
   width: 75vw;
   margin: 20vh auto 0 auto;
 }
+
+/* MEDIA QUERIES */
+
+/* SMALL */
+@media (max-width: 600px){
+  .title-container {
+    width: 90vw;
+  }
+}
+
+/* SMALL */
+@media (max-width: 500px){
+  #home-subtitle {
+    font-size: 30px;
+    width: 90vw;
+  }
+}
+
+/* X-SMALL */
+@media (max-width: 350px){
+
+  .title-container {
+    width: 98vw;
+    height: 10em;
+    margin-top: 15vh;
+  }
+
+  #home-subtitle {
+    font-size: 25px;
+    width: 95vw;
+  }
+}
