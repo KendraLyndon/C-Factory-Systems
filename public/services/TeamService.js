@@ -11,15 +11,16 @@ app.factory('TeamService', function(){
           '5 Granted and 11 in-process patents'
         ]
       },
-      {
-        name: 'Dr. Ray Gottesfeld, M.D.',
-        title: 'VP QA and Clinical Affairs',
-        photo: '../assets/img/placeholder.png',
-        accomplishments: [
-          'Serial entrepreneur, 6 startup/early-stage companies',
-          'Chief Medical Officer of $300M Division'
-        ]
-      },
+      // {
+        // name: 'Dr. Ray Gottesfeld, M.D.',
+        // title: 'VP QA and Clinical Affairs',
+        // photo: '../assets/img/placeholder.png',
+        // accomplishments: null
+        // [
+        //   'Serial entrepreneur, 6 startup/early-stage companies',
+        //   'Chief Medical Officer of $300M Division'
+        // ]
+      // },
       {
         name: 'Frieda Sands',
         title: 'VP Marcom Secretary and Treasurer',
