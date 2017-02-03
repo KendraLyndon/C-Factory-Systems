@@ -320,7 +320,10 @@ nav {
     padding: 4vh 2% 3vh 2%; }
 
   .header-nav-list {
-    display: none; } }
+    display: none; }
+
+  .cfs-footer-child {
+    padding: 0 2vw 1em 2vw; } }
 /* X-SMALL */
 @media (max-width: 480px) {
   section {
