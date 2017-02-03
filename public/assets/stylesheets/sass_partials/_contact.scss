@@ -7,11 +7,6 @@
   width: 100%;
 }
 
-.contact-image-container {
-  height: 100%;
-  overflow-x: hidden;
-}
-
 .contact-alignment {
   height: 270px;
 }
@@ -52,4 +47,10 @@
   display: inline-block;
   font-size: 25px;
   color: white;
+}
+
+@media (max-width: 600px){
+  .contact-image-container {
+    margin-bottom: -10px;
+  }
 }

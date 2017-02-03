@@ -164,10 +164,6 @@
 .contact-png {
   width: 100%; }
 
-.contact-image-container {
-  height: 100%;
-  overflow-x: hidden; }
-
 .contact-alignment {
   height: 270px; }
 
@@ -202,6 +198,9 @@
   font-size: 25px;
   color: white; }
 
+@media (max-width: 600px) {
+  .contact-image-container {
+    margin-bottom: -10px; } }
 .questions-container {
   margin-top: 8vh;
   background-color: rgba(255, 255, 255, 0.7);
