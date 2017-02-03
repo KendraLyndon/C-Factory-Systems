@@ -1,17 +1,18 @@
-<h2 class="subtitle"><img class="title-png" src="../assets/img/about-text.png" alt="About"/></h2>
-<section class="section-about">
-  <div layout="row" layout-align="space-around">
-    <div ng-repeat="member in vm.team" flex="20">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{member.photo}}">
+<a class="anchor" name="about"></a>
+<h2 class="subtitle"><img class="title-png" src="../assets/img/about-text-grey.png" alt="About"/></h2>
+<div class="row">
+  <div ng-repeat="member in vm.team track by $index" class="col s12 m6 l4">
+    <div >
+        <div class="card">
+          <div class="card-image">
+            <img src="{{member.photo}}">
+          </div>
+          <div class="card-content about-content">
+            <h4 class="card-title">{{member.name}}</h4>
+            <h6 class="card-title member-title">{{member.title}}</h6>
+            <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+          </div>
         </div>
-        <div class="card-content about-content">
-          <h4 class="card-title">{{member.name}}</h4>
-          <h6 class="card-title member-title">{{member.title}}</h6>
-          <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
-        </div>
-      </div>
     </div>
   </div>
-</section>
+</div>

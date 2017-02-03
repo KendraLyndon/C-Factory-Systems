@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="app" ng-cloak>
+<html ng-app="app">
   <head>
-    <base href="/" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <script src="https://use.fontawesome.com/6cc2801183.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -16,6 +15,7 @@
     <link rel='shortcut icon' href='assets/favicon.ico' type='image/x-icon'/ >
     <link rel="stylesheet" href="assets/stylesheets/input.css" />
     <title>C Factory Systems</title>
+    <base href="/" />
   </head>
   <body>
     <header>
@@ -36,7 +36,7 @@
         </ul>
       </nav>
     </header>
-    <main ng-view>
+    <main ui-view>
     </main>
     <footer class="page-footer" id="cfs-footer">
       <div class="cfs-footer-child" layout="row">
@@ -49,7 +49,6 @@
             ...there is nothing to replace, nothing to monitor, ever.
           </p>
         </div>
-
         <ul flex="auto" layout="column">
           <li><a class="grey-text text-lighten-3" href="/products">Products</a></li>
           <li><a class="grey-text text-lighten-3" href="/partners">Partners</a></li>
@@ -67,7 +66,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="controllers/HomeController.js"></script>
     <script type="text/javascript" src="controllers/AboutController.js"></script>
     <script type="text/javascript" src="controllers/MagicController.js"></script>
     <script type="text/javascript" src="controllers/FAQController.js"></script>

@@ -1,39 +1,39 @@
-var app = angular.module('app', ['ngRoute', 'ngMaterial']);
+var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngMaterial']);
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($stateProvider, $locationProvider) {
 
-  $routeProvider
-    .when('/', {
-      templateUrl: 'partials/home.html',
-      controller: 'HomeController'
+  $stateProvider
+    .state('index', {
+      templateUrl: "partials/home.html"
     })
-    // .when('/about', {
-    //   templateUrl: 'partials/about.html',
-    //   controller: 'AboutController'
-    // })
-    // .when('/contact', {
-    //   templateUrl: 'partials/contact.html'
-    // })
-    .when('/faqs', {
-      templateUrl: 'partials/faqs.html',
-      controller: 'FAQController'
+    .state('index.home', {
+      url: "/",
+      views: {
+        "top": { templateUrl: "partials/top.html" },
+        "products": { templateUrl: "partials/products.html" },
+        "partners": { templateUrl: "partials/partners.html" },
+        "magic": {
+          templateUrl: "partials/magic.html",
+          controller: "MagicController"
+        },
+        "about": {
+          templateUrl: "partials/about.html",
+          controller: "AboutController"
+        },
+        "contact": { templateUrl: "partials/contact.html" }
+      }
     })
-    // .when('/magic', {
-    //   templateUrl: 'partials/magic.html',
-    //   controller: 'MagicController'
-    // })
-    // .when('/partners', {
-    //   templateUrl: 'partials/partners.html'
-    // })
-    // .when('/products', {
-    //   templateUrl: 'partials/products.html'
-    // })
-    .when('/shop', {
-      templateUrl: 'partials/shop.html'
+
+    .state('faqs', {
+      url: "/faqs",
+      templateUrl: "partials/faqs.html"
     })
-    .otherwise('/',{
-      redirectTo : '/'
+
+    .state('shop', {
+      url: "/shop",
+      templateUrl: "partials/shop.html"
     })
+
 
   $locationProvider.html5Mode(true);
 });
