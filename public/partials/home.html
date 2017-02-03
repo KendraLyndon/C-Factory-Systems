@@ -3,33 +3,33 @@
   <div class="title-container">
   </div>
   <h3 class="subtitle">The world leader in active two-way Humidity Control Technology</h3>
-  <!-- <h4 class="subtitle">We take water from the air to create the perfect environment for whatever you want to store.</h4>
-  <h5 class="subtitle">...and because we are the only active solution on the market, there is nothing to replace, nothing to monitor, ever. </h5> -->
 </section>
 
 <!-- PRODUCTS -->
-<section layout="row" class="section-product-description">
-  <div flex="60" class="product-container">
-    <h2 class="subtitle"><img class="title-png" src="../assets/img/products-text.png" alt="Products"/></h2>
-    <p class="product-text">
-      The Biosafe moves water vapor between the ambient air and the storage chamber as required for a specific humidity, automatically, and with no user action or maintenance required.
-    </p>
-    <p class="product-text">
-      C Factory Systems' patent-pending two-day humidity and temperature control technology is the only set-and-forget solution to assuring proper storage of biologicals. Our active solution constantly monitors the internal ambient humidity, adding or removing moisture as required, resulting in the precise environmental humidity for whatver you are storing.
-    </p>
-    <p class="product-text">
-      Automatic temperature control is also available.
-    </p>
-  </div>
-  <div flex="40" class="product-image-container">
-    <img src="http://placehold.it/400x550?text=product+image" alt="placeholder"/>
+<section class="section-product-description">
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/products-text.png" alt="Products"/></h2>
+  <div layout="row">
+    <div flex="60" class="product-container">
+      <p class="product-text">
+        The Biosafe moves water vapor between the ambient air and the storage chamber as required for a specific humidity, automatically, and with no user action or maintenance required.
+      </p>
+      <p class="product-text">
+        C Factory Systems' patent-pending two-day humidity and temperature control technology is the only set-and-forget solution to assuring proper storage of biologicals. Our active solution constantly monitors the internal ambient humidity, adding or removing moisture as required, resulting in the precise environmental humidity for whatver you are storing.
+      </p>
+      <p class="product-text">
+        Automatic temperature control is also available.
+      </p>
+    </div>
+    <div flex="40" class="product-image-container">
+      <img src="http://placehold.it/400x500?text=product+image" alt="placeholder"/>
+    </div>
   </div>
 </section>
 
 <!-- PARTNERS -->
 <section role="search" class="section-partners">
   <h2 class="subtitle"><img class="title-png" src="../assets/img/partners-text.png" alt="Partner Stores"/></h2>
-  <div layout="row">
+  <div class="partners-container" layout="row">
     <div class="logo-container" flex="auto">
       <img class="logo-placeholder" src="http://placehold.it/425x250?text=logo+placeholder" alt="logo placeholder">
     </div>
@@ -49,10 +49,11 @@
   </div>
 </section>
 
+<!-- THE MAGIC -->
 <section class="section-magic">
   <h2 class="subtitle"><img class="title-png" src="../assets/img/magic-text.png" alt="The Magic"/></h2>
   <div class="row">
-    <div ng-repeat="category in vm.categories" | orderBy:'category.type' class="col s12 m3 l3">
+    <div ng-repeat="category in vm.categories" | orderBy:'category.type' class="col s12 m4 l3">
       <div class="card category-card">
         <div class="card-image">
           <img class="category-photo" ng-src="{{category.photo}}" alt="{{category.type}}"/>
@@ -64,24 +65,44 @@
     </div>
 </section>
 
+<!-- ABOUT -->
 <section class="section-about">
   <h2 class="subtitle"><img class="title-png" src="../assets/img/about-text.png" alt="About"/></h2>
-  <div layout="row" layout-align="space-around">
-    <div ng-repeat="member in vm.team" flex="20">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{member.photo}}">
-        </div>
-        <div class="card-content about-content">
-          <h4 class="card-title">{{member.name}}</h4>
-          <h6 class="card-title member-title">{{member.title}}</h6>
-          <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+    <div class="row">
+      <div ng-repeat="member in vm.team track by $index" class="col s12 m5 l5">
+        <div ng-if="$index < 2">
+            <div class="card">
+              <div class="card-image">
+                <img src="{{member.photo}}">
+              </div>
+              <div class="card-content about-content">
+                <h4 class="card-title">{{member.name}}</h4>
+                <h6 class="card-title member-title">{{member.title}}</h6>
+                <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div ng-repeat="member in vm.team track by $index" class="col s12 m5 l5">
+        <div ng-if="$index > 1">
+            <div class="card">
+              <div class="card-image">
+                <img src="{{member.photo}}">
+              </div>
+              <div class="card-content about-content">
+                <h4 class="card-title">{{member.name}}</h4>
+                <h6 class="card-title member-title">{{member.title}}</h6>
+                <p class="card-text" ng-repeat="accomplishment in member.accomplishments">{{accomplishment}}</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 </section>
 
+<!-- CONTACT -->
 <section class="section-contact">
   <h2 class="subtitle"><img class="title-png" src="../assets/img/contact-text.png" alt="Contact Us"/></h2>
   <div layout="row">
