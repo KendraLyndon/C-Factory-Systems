@@ -49,3 +49,36 @@
 .fa-search {
   color: $primary-teal;
 }
+
+/*  MEDIA QUERIES  */
+
+/*  MEDIUM  */
+@media (max-width: 960px) {
+  .search-container {
+    padding-left: 0;
+  }
+  .logo-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .partner-text {
+    margin-top: 25px;
+  }
+}
+
+/*  SMALL  */
+@media (max-width: 600px) {
+  .partners-container {
+    padding-top: 2vh;
+  }
+  .logo-container {
+    width: 95vw;
+  }
+}

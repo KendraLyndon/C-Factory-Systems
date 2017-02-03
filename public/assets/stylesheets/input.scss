@@ -134,9 +134,11 @@ nav {
     padding: 5vh 8vw 3vh 8vw;
   }
   .subtitle {
-    width: 80vw;
+    width: 85vw;
   }
-
+  // .corner-logo {
+  //   display: none;
+  // }
 }
 
 @media (max-width: 840px){
@@ -148,7 +150,7 @@ nav {
 /* SMALL */
 @media (max-width: 600px){
   section {
-    padding: 5vh 2% 3vh 2%;
+    padding: 4vh 2% 3vh 2%;
   }
   .header-nav-list {
     display: none;
@@ -157,7 +159,13 @@ nav {
 
 /* X-SMALL */
 @media (max-width: 480px){
-
+  section {
+    padding: 2vh 2% 1vh 2%;
+  }
+  .subtitle {
+    width: 95vw;
+    margin: 1vh auto 1vh auto;
+  }
 }
 
 @media (max-width: 350px){
