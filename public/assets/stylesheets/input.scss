@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  min-height: 85vh;
+  min-height: 90vh;
   background: none;
 }
 
@@ -43,6 +43,11 @@ section {
 
 .subtitle {
   text-align: center;
+}
+
+.page-subtitle {
+  text-align: center;
+  padding-top: 10vh;
 }
 
 /* generic color styling */
