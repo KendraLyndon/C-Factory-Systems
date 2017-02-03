@@ -15,7 +15,8 @@ app.config(function($routeProvider, $locationProvider) {
     //   templateUrl: 'partials/contact.html'
     // })
     .when('/faqs', {
-      templateUrl: 'partials/faqs.html'
+      templateUrl: 'partials/faqs.html',
+      controller: 'FAQController'
     })
     // .when('/magic', {
     //   templateUrl: 'partials/magic.html',
