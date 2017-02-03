@@ -147,14 +147,14 @@
   height: auto; }
 
 .category-photo {
-  max-height: 150px; }
+  object-fit: cover; }
 
 .card .category-content {
   padding: 5px; }
 
 .category-title {
   text-align: center;
-  font-size: 20px !important;
+  font-size: 18px !important;
   margin: 5px auto 5px auto; }
 
 .section-contact {
@@ -325,10 +325,10 @@ nav {
 /* X-SMALL */
 @media (max-width: 480px) {
   section {
-    padding: 2vh 2% 1vh 2%; }
+    padding: 2vh 1% 1vh 1%; }
 
   .subtitle {
-    width: 95vw;
+    width: 95%;
     margin: 1vh auto 1vh auto; } }
 
 /*# sourceMappingURL=input.css.map */
