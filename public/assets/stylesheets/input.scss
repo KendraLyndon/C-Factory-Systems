@@ -9,6 +9,7 @@ $dark-grey: #2A2B2B;
 @import 'sass_partials/partners';
 @import 'sass_partials/magic';
 @import 'sass_partials/contact';
+@import 'sass_partials/faq';
 
 /* every page high level */
 
@@ -47,7 +48,7 @@ section {
 
 .page-subtitle {
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 /* generic color styling */

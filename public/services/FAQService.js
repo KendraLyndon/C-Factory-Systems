@@ -1,4 +1,4 @@
-app.factory('TeamService', function(){
+app.factory('FAQService', function(){
   return {
     questions : [
       {

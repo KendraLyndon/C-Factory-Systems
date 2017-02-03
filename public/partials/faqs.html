@@ -1,1 +1,11 @@
-<h2 class="page-subtitle"><img class="title-png" src="../assets/img/faqs-text.png" alt="FAQs"/></h2>
+<section class="faq-section">
+  <h2 class="page-subtitle"><img class="title-png" src="../assets/img/faqs-text.png" alt="FAQs"/></h2>
+  <div class="questions-container">
+    <div ng-repeat="faq in vm.questions" class="question-div">
+      <h4>{{faq.question}}</h4>
+      <p>
+        {{faq.answer}}
+      </p>
+    </div>
+  </div>
+</section>
