@@ -1,5 +1,6 @@
 <!-- TITLE -->
 <section class="home-title-section">
+  <a class="anchor" name="home"></a>
   <div class="title-container">
   </div>
   <h3 class="subtitle">The world leader in active two-way Humidity Control Technology</h3>
@@ -7,6 +8,7 @@
 
 <!-- PRODUCTS -->
 <section class="section-product-description">
+  <a class="anchor" name="products"></a>
   <h2 class="subtitle"><img class="title-png" src="../assets/img/products-text.png" alt="Products"/></h2>
   <div layout="row">
     <div flex="60" class="product-container">
@@ -28,7 +30,8 @@
 
 <!-- PARTNERS -->
 <section role="search" class="section-partners">
-  <h2 class="subtitle"><img class="title-png" src="../assets/img/partners-text.png" alt="Partner Stores"/></h2>
+  <a class="anchor" name="partners"></a>
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/partners-text-white.png" alt="Partner Stores"/></h2>
   <div class="partners-container" layout="row">
     <div class="logo-container" flex="auto">
       <img class="logo-placeholder" src="http://placehold.it/425x250?text=logo+placeholder" alt="logo placeholder">
@@ -51,6 +54,7 @@
 
 <!-- THE MAGIC -->
 <section class="section-magic">
+  <a class="anchor" name="magic"></a>
   <h2 class="subtitle"><img class="title-png" src="../assets/img/magic-text.png" alt="The Magic"/></h2>
   <div class="row">
     <div ng-repeat="category in vm.categories" | orderBy:'category.type' class="col s12 m4 l3">
@@ -67,10 +71,11 @@
 
 <!-- ABOUT -->
 <section class="section-about">
-  <h2 class="subtitle"><img class="title-png" src="../assets/img/about-text.png" alt="About"/></h2>
+  <a class="anchor" name="about"></a>
+  <h2 class="subtitle"><img class="title-png" src="../assets/img/about-text-grey.png" alt="About"/></h2>
     <div class="row">
-      <div ng-repeat="member in vm.team track by $index" class="col s12 m5 l5">
-        <div ng-if="$index < 2">
+      <div ng-repeat="member in vm.team track by $index" class="col s12 m6 l3">
+        <div >
             <div class="card">
               <div class="card-image">
                 <img src="{{member.photo}}">
@@ -84,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div ng-repeat="member in vm.team track by $index" class="col s12 m5 l5">
         <div ng-if="$index > 1">
             <div class="card">
@@ -99,41 +104,44 @@
             </div>
         </div>
       </div>
-    </div>
+    </div> -->
 </section>
 
 <!-- CONTACT -->
 <section class="section-contact">
-  <h2 class="subtitle"><img class="title-png" src="../assets/img/contact-text.png" alt="Contact Us"/></h2>
+  <a class="anchor" name="contact"></a>
   <div layout="row">
-    <div flex="60" class="contact-image-container">
+    <div flex="55" class="con tact-image-container">
       <img class="denver-image" src="../assets/img/Denver1.jpg" alt="Denver"/>
     </div>
-    <div flex="40" class="contact-container valign-wrapper">
-      <div class="valign">
-        <div class="contact-detail">
-          <img class="contact-detail-icon" src="../assets/img/mailbox3.png" />
-          <p class="contact-detail-mail" id="contact-detail-mail-top">
-            C Factory Systems, Inc
-          </p>
-          <p class="contact-detail-mail">
-            PO Box 200787
-          </p>
-          <p class="contact-detail-mail">
-            Denver, CO 80230
-          </p>
-        </div>
-        <div class="contact-detail">
-          <i class="fa fa-envelope fa-2x contact-detail-icon" aria-hidden="true"></i>
-          <p class="contact-detail-text">
-            info@cfactorysystems.com
-          </p>
-        </div>
-        <div class="contact-detail">
-          <i class="fa fa-phone fa-2x contact-detail-icon" aria-hidden="true"></i>
-          <p class="contact-detail-text">
-            (303) 406-1210
-          </p>
+    <div flex="45" class="contact-container">
+      <h2 class="contact-subtitle"><img class="title-png contact-png" src="../assets/img/contact-text-white.png" alt="Contact Us"/></h2>
+      <div class="valign-wrapper contact-alignment">
+        <div class="valign">
+          <div class="contact-detail">
+            <img class="contact-detail-icon" src="../assets/img/mailbox3.png" />
+            <p class="contact-detail-mail" id="contact-detail-mail-top">
+              C Factory Systems, Inc
+            </p>
+            <p class="contact-detail-mail">
+              PO Box 200787
+            </p>
+            <p class="contact-detail-mail">
+              Denver, CO 80230
+            </p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa fa-envelope fa-2x contact-detail-icon" aria-hidden="true"></i>
+            <p class="contact-detail-text">
+              info@cfactorysystems.com
+            </p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa fa-phone fa-2x contact-detail-icon" aria-hidden="true"></i>
+            <p class="contact-detail-text">
+              (303) 406-1210
+            </p>
+          </div>
         </div>
       </div>
     </div>

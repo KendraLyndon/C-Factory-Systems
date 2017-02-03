@@ -11,8 +11,8 @@
 
 .section-about {
   margin-top: 3em;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   background-color: white; }
 
 .card .about-content {
@@ -82,6 +82,10 @@
 .fa-search {
   color: #12AD8D; }
 
+.section-magic {
+  padding-left: 8vw;
+  padding-right: 8vw; }
+
 .category-photo {
   width: 400px;
   height: auto; }
@@ -97,9 +101,18 @@
   font-size: 20px !important;
   margin: 5px auto 5px auto; }
 
+.section-contact {
+  padding: 0; }
+
+.contact-png {
+  width: 100%; }
+
 .contact-image-container {
   height: 100%;
   overflow-x: hidden; }
+
+.contact-alignment {
+  height: 270px; }
 
 .denver-image {
   height: 100%;
@@ -141,7 +154,7 @@
   color: black; }
 
 html {
-  background: url("../img/sky-darker-transparent.png") no-repeat center center fixed;
+  background: url("../img/sky-transparent.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
