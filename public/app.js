@@ -21,12 +21,14 @@ app.config(function($stateProvider, $locationProvider) {
           controller: "AboutController"
         },
         "contact": { templateUrl: "partials/contact.html" }
-      }
+      },
+      controller: "ScrollController"
     })
 
     .state('faqs', {
       url: "/faqs",
-      templateUrl: "partials/faqs.html"
+      templateUrl: "partials/faqs.html",
+      controller: "FAQController"
     })
 
     .state('shop', {
