@@ -4,10 +4,13 @@ app.config(function($stateProvider, $locationProvider) {
 
   $stateProvider
     .state('index', {
-      templateUrl: "partials/home.html"
+      templateUrl: "partials/home.html",
     })
     .state('index.home', {
       url: "/",
+      params: {
+          locId: null
+      },
       views: {
         "top": { templateUrl: "partials/top.html" },
         "products": { templateUrl: "partials/products.html" },
@@ -21,8 +24,7 @@ app.config(function($stateProvider, $locationProvider) {
           controller: "AboutController"
         },
         "contact": { templateUrl: "partials/contact.html" }
-      },
-      controller: "ScrollController"
+      }
     })
 
     .state('faqs', {

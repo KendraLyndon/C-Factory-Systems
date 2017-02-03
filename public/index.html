@@ -17,22 +17,22 @@
     <title>C Factory Systems</title>
     <base href="/" />
   </head>
-  <body>
+  <body ng-controller="ScrollController">
     <header>
       <nav layout="row">
         <div flex-gt-sm="40" flex="20" class="header-logo-container">
-          <a href="/">
+          <a ui-sref="index.home">
             <div class="cfs-header-logo"></div>
           </a>
         </div>
         <ul class="header-nav-list" flex-gt-sm="60" flex="80" layout id="nav-mobile">
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/#products">Products</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/#partners">Partners</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/#magic">The Magic</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/faqs">FAQs</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/shop">Shop</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="#about">About</a></li>
-          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" href="/#contact">Contact Us</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('products')">Products</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('partners')">Partners</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('magic')">The Magic</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ui-sref="faqs">FAQs</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ui-sref="shop">Shop</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('about')">About</a></li>
+          <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('contact')">Contact Us</a></li>
         </ul>
       </nav>
     </header>
