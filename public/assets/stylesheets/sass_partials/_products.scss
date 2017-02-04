@@ -8,6 +8,7 @@
   overflow-x: hidden;
 
   img {
+    height: 80vh;
     float: right;
   }
 }
@@ -18,7 +19,7 @@
 }
 
 .product-text {
-  font-size: 23px;
+  font-size: 22px;
   margin: 0 auto 1em auto;
   text-align: justify;
   color: $dark-grey;
@@ -37,5 +38,11 @@
 
   .product-container {
     padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-product-description {
+    padding: 0;
   }
 }

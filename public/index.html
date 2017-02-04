@@ -50,13 +50,13 @@
           </p>
         </div>
         <ul flex="auto" layout="column">
-          <li><a class="grey-text text-lighten-3" href="/products">Products</a></li>
-          <li><a class="grey-text text-lighten-3" href="/partners">Partners</a></li>
-          <li><a class="grey-text text-lighten-3" href="/magic">The Magic</a></li>
-          <li><a class="grey-text text-lighten-3" href="/faqs">FAQs</a></li>
-          <li><a class="grey-text text-lighten-3" href="/shop">Shop</a></li>
-          <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
-          <li><a class="grey-text text-lighten-3" href="/contact">Contact Us</a></li>
+          <li><a class="grey-text text-lighten-3" ng-click="scrollTo('products')">Products</a></li>
+          <li><a class="grey-text text-lighten-3" ng-click="scrollTo('partners')">Partners</a></li>
+          <li><a class="grey-text text-lighten-3" ng-click="scrollTo('magic')">The Magic</a></li>
+          <li><a class="grey-text text-lighten-3" ui-sref="faqs">FAQs</a></li>
+          <li><a class="grey-text text-lighten-3" ui-sref="shop">Shop</a></li>
+          <li><a class="grey-text text-lighten-3" ng-click="scrollTo('about')">About</a></li>
+          <li><a class="grey-text text-lighten-3" ng-click="scrollTo('contact')">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-copyright">

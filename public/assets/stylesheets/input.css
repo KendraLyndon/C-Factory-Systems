@@ -36,6 +36,15 @@
   padding-right: 8vw;
   background-color: white; }
 
+.team-row {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto; }
+
+.card-container {
+  padding-left: 35px;
+  padding-right: 35px; }
+
 .card .about-content {
   padding: 5px; }
 
@@ -53,6 +62,7 @@
   margin-top: 2em;
   overflow-x: hidden; }
   .product-image-container img {
+    height: 80vh;
     float: right; }
 
 .product-container {
@@ -60,7 +70,7 @@
   margin-top: 2em; }
 
 .product-text {
-  font-size: 23px;
+  font-size: 22px;
   margin: 0 auto 1em auto;
   text-align: justify;
   color: #2A2B2B; }
@@ -74,6 +84,9 @@
 
   .product-container {
     padding-right: 0; } }
+@media (max-width: 480px) {
+  .section-product-description {
+    padding: 0; } }
 .logo-container img {
   float: right; }
 
