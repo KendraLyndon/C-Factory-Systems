@@ -1,12 +1,12 @@
 <h2 class="subtitle"><img class="title-png" src="../assets/img/magic-text-grey.png" alt="The Magic"/></h2>
 <div class="row">
-  <div ng-repeat="category in vm.categories" | orderBy:'category.type' class="col s12 m4 l3">
+  <div class="col s12 m4 l3" ng-repeat="category in vm.categories | orderBy:id">
     <div class="card category-card">
       <div class="card-image">
         <img class="category-photo" ng-click="toggleSelected(category)" ng-src="{{category.photo}}" alt="{{category.type}}"/>
       </div>
       <div class="card-content category-content">
-        <h4 class="card-title category-title">{{category.type}}</h4>
+        <h4 class="card-title category-title" id="{{category.id}}">{{category.type}}</h4>
       </div>
     </div>
     <div ng-show="category.selected" ng-mouseleave="toggleSelected(category)" class="expanded-category">
