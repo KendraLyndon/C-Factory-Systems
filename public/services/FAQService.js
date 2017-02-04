@@ -11,11 +11,11 @@ app.factory('FAQService', function(){
       },
       {
         question: "I live in a dry area.  Will it increase the humidity until it is at the proper level?",
-        answer: "In any area where the outside humidity is at least 20% (almost all North American cities), the BioSafe Home is capable of raising the relative humidity of the storage chamber as high as 90%.    For environments with an average relative humidity of less than 20%, an optional “humidity-boost” system is available."
+        answer: "In any area where the outside humidity is at least 20% (almost all North American cities), the BioSafe Home is capable of raising the relative humidity of the storage chamber to the proper level.    For environments with an average relative humidity of less than 20%, an optional “humidity-boost” system is available."
       },
       {
         question: "I live in a humid area.  Will it dry my products to the proper level?",
-        answer: "Yes, the BioSafe Home is capable of lowering the humidity of the storage chamber to the desired level in any area with a relative humidity of up to 95%."
+        answer: "Yes, the BioSafe Home is capable of lowering the humidity of the storage chamber to the desired level regardless of the humidity of the area in which it is used."
       },
       {
         question: "I live in a humid area.  Why do I need a BioSafe to store organic material?",

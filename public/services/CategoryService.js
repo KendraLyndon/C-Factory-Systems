@@ -32,9 +32,9 @@ app.factory('CategoryService', function(){
         description: 'The optimum temperature for storing herbs ranges from 32°F to 61°F, depending on the specific item, with the ideal level of relative humidity between 80% and 90%.'
       },
       {
-        type: 'Organ Transport',
+        type: 'Medical Speciment Transport',
         photo: '../assets/img/Organ-Transport.jpg',
-        description: ''
+        description: 'Medical specimens required cold temperatures at elevated humidity levels for extended periods of time while in transit. There are a wide range of applications including EMT, Fire & Rescue, Pharmaceutical transport, growth hormone, vaccine travel kits, IV Fluids, specimen and biohazard transport.  Contact CFS for more information about specific applications.'
       },
       {
         type: 'String Instruments',
@@ -49,7 +49,7 @@ app.factory('CategoryService', function(){
       {
         type: 'Seeds',
         photo: '../assets/img/Seeds.jpg',
-        description: 'Seeds are unique in their long-term storage requirements.  They should be stored in a temperature and humidity controlled environment which the sum of the temperature (in Fahrenheit) plus the relative humidity (in percent) does not exceed 100.  Thus, if seeds are stored at a temperature of 70oF, the humidity should not exceed 30%.  Seeds should never be frozen unless the moisture content is below 1%.'
+        description: 'Seeds are unique in their long-term storage requirements. They should be stored in a temperature and humidity controlled environment which the sum of the temperature (in Fahrenheit) plus the relative humidity (in percent) does not exceed 100. Thus, if seeds are stored at a temperature of 70°F, the humidity should not exceed 30%.  Seeds should never be frozen unless the moisture content is below 1%.'
       },
       {
         type: 'Spices',
@@ -59,7 +59,7 @@ app.factory('CategoryService', function(){
       {
         type: 'Sports Equipment',
         photo: '../assets/img/Sports.jpg',
-        description: ''
+        description: 'GolfBallTest.org has debunked a myth about golf ball storage: "Storing golf balls in the freezer is never recommended and does not preserve their compression and freshness, contrary to some belief." In fact, most all sports equipment does best with relatively moderate temperatures in the range of 70°F to 80°F and at a relative humidity that does not exceed 50%.'
       },
       {
         type: 'Teas',
