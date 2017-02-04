@@ -9,7 +9,7 @@ app.factory('CategoryService', function(){
       {
         type: 'Art',
         photo: '../assets/img/Art.jpg',
-        description: 'The ideal temperature for storing art is between 66°F to 74oF, with the level of relative humidity ranging from 42% to 58%.'
+        description: 'The ideal temperature for storing art is between 66°F to 74°F, with the level of relative humidity ranging from 42% to 58%.'
       },
       {
         type: 'Cigars',

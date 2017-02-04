@@ -153,7 +153,8 @@
     width: 95vw; } }
 .section-magic {
   padding-left: 8vw;
-  padding-right: 8vw; }
+  padding-right: 8vw;
+  position: relative; }
 
 .category-photo {
   width: 400px;
@@ -170,6 +171,26 @@
   text-align: center;
   font-size: 18px !important;
   margin: 5px auto 5px auto; }
+
+.expanded-category {
+  padding: 30px;
+  position: absolute;
+  z-index: 100;
+  top: 15vh;
+  left: 20vh;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .expanded-category .selected-category-photo {
+    position: relative;
+    left: 15%;
+    width: 70%; }
+  .expanded-category p {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px; }
 
 .section-contact {
   padding: 0;
