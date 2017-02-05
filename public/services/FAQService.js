@@ -47,9 +47,7 @@ app.factory('FAQService', function(){
       },
       {
         question: "What do the different colored lights mean?",
-        answer: `The BioSafe Home has a single indicator that changes color to indicate the status of the storage chamber. Green mean the system is raising the humidity in the storage chamber.`+
-                `Red means the system is decreasing the humidity, and blue indicates that the storage chamber has reached, and is being maintained, at the target humidity. One of these three colors is always displayed when the unit is powered.`+
-                `A separate similar indicator displays cooling and heating operations in temperature-controlled units.`
+        answer: "The BioSafe Home has a single indicator that changes color to indicate the status of the storage chamber. Green mean the system is raising the humidity in the storage chamber. Red means the system is decreasing the humidity, and blue indicates that the storage chamber has reached, and is being maintained, at the target humidity. One of these three colors is always displayed when the unit is powered. A separate similar indicator displays cooling and heating operations in temperature-controlled units."
       },
       {
         question: "I see how the BioSafe can keep my organics at the proper humidity and temperature, but can the BioSafe keep my organics secure?",
