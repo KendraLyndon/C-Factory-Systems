@@ -33,6 +33,8 @@
 
     img {
       float: none;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -43,6 +45,12 @@
 
 @media (max-width: 480px) {
   .section-product-description {
-    padding: 0;
+    padding: 1em 0 0 0;
+  }
+  .product-image-container {
+    margin-top: 10px;
+  }
+  .product-text {
+    font-size: 20px;
   }
 }

@@ -9,11 +9,16 @@
         <h4 class="card-title category-title" id="{{category.id}}">{{category.type}}</h4>
       </div>
     </div>
-    <div ng-show="category.selected" ng-mouseleave="toggleSelected(category)" class="expanded-category">
-      <img class="selected-category-photo" ng-src="{{category.photo}}" alt="{{category.type}}"/>
-      <p>
-        {{category.description}}
-      </p>
+    <div layout="row" ng-show="category.selected" ng-mouseleave="toggleSelected(category)" class="expanded-category">
+      <div flex-gt-sm="65" flex="50" class="selected-left">
+        <img class="selected-category-photo" ng-src="{{category.photo}}" alt="{{category.type}}"/>
+      </div>
+      <div flex-gt-sm="35" flex="50" class="selected-right">
+        <h4 class="selected-category-title">{{category.type}}</h4>
+        <p>
+          {{category.description}}
+        </p>
+      </div>
     </div>
   </div>
 </div>

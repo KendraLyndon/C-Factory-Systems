@@ -23,5 +23,8 @@
     "lodash": "^4.17.4",
     "angular-google-maps": "^2.4.1",
     "angular-simple-logger": "^0.1.7"
+  },
+  "devDependencies": {
+    "angular-google-maps-geocoder": "^0.0.2"
   }
 }
