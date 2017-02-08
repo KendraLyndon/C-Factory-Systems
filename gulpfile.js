@@ -12,7 +12,7 @@ gulp.task('compress-bower', function () {
 });
 
 gulp.task('compress-src', function () {
-  return gulp.src(['./public/**/*.js', '!public/scripts/**'])
+  return gulp.src(['./public/**/*.js', '!public/build/scripts/**'])
     .pipe(concat('app.js'))
     .pipe(gulp.dest('public/build/scripts'));
 });

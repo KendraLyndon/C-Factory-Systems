@@ -66,7 +66,9 @@ app.controller("MagicController", function($scope, CategoryService) {
 })
 
 app.controller("MapController", function($scope) {
+
   $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+
 })
 
 app.controller("ScrollController", function($scope, $state, $stateParams, $location, $anchorScroll) {
@@ -257,7 +259,7 @@ app.factory('TeamService', function(){
         name: 'Dr. Ray Gottesfeld, M.D.',
         title: 'VP QA and Clinical Affairs',
         photo: '../assets/img/Ray-Gottesfeld.jpg',
-        accomplishments: 
+        accomplishments:
         [
           'Serial entrepreneur, 6 startup/early-stage companies',
           'Chief Medical Officer of $300M Division'
@@ -270,15 +272,6 @@ app.factory('TeamService', function(){
         accomplishments: [
           'Serial entrepreneur, 5 startup/early-stage companies',
           'Former director and board member of various non-profits'
-        ]
-      },
-      {
-        name: 'John deLassus',
-        title: 'VP Engineering and Operations',
-        photo: '../assets/img/John-deLassus.png',
-        accomplishments: [
-          'Serial high-tech entrepreneur, 7 startup/early-stage companies',
-          '3 Granted patents'
         ]
       }
     ]
