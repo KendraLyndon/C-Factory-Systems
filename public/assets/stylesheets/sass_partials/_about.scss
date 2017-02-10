@@ -8,8 +8,6 @@
 
 .team-row {
   width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card .about-content {
@@ -20,8 +18,22 @@
   margin-bottom: 10px !important;
 }
 
+.member-name {
+  font-size: 25px !important;
+}
+
 .member-title {
-  font-size: 20px !important;
+  font-size: 18px !important;
+}
+
+.team-description-container {
+  width: 70vw;
+  margin: 0 auto 20px auto;
+
+  p {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 960px) {
