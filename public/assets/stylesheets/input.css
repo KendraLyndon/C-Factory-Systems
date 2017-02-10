@@ -32,9 +32,9 @@
 .section-about {
   position: relative;
   margin-top: 3em;
-  padding-left: 8vw;
-  padding-right: 8vw;
-  background-color: white; }
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0; }
 
 .team-row {
   width: 70vw; }
@@ -58,26 +58,35 @@
     font-size: 22px;
     text-align: center; }
 
+@media (max-width: 1050px) {
+  .team-row {
+    width: 80vw; }
+
+  .team-description-container {
+    width: 80vw; } }
 @media (max-width: 960px) {
-  .card-container {
-    padding-left: 20px;
-    padding-right: 20px; } }
-@media (max-width: 600px) {
-  .section-about {
-    padding-left: 3vw;
-    padding-right: 3vw; }
+  .team-row {
+    width: 90vw; }
+
+  .team-description-container {
+    width: 90vw; }
 
   .card-container {
-    padding-left: 10px;
-    padding-right: 10px; } }
+    padding-left: 0;
+    padding-right: 0; } }
 @media (max-width: 600px) {
-  .section-about {
-    padding-left: 2px;
-    padding-right: 2px; }
+  .team-row {
+    width: 70vw; }
+
+  .team-description-container {
+    width: 98vw; }
 
   .card-container {
     padding-left: 2px;
     padding-right: 2px; } }
+@media (max-width: 430px) {
+  .team-row {
+    width: 95vw; } }
 .section-product-description {
   background: white;
   position: relative; }
