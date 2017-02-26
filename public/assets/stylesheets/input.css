@@ -378,7 +378,7 @@ header {
   background-image: url("../img/cfs-logo-black.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 61px;
+  height: 9vh;
   width: 90px;
   margin-top: 5px;
   margin-left: 5px; }
@@ -433,6 +433,9 @@ header {
   section {
     padding: 5vh 5vw 3vh 5vw; } }
 /* SMALL */
+@media (min-width: 601px) {
+  .sm-nav {
+    display: none; } }
 @media (max-width: 600px) {
   section {
     padding: 4vh 2% 3vh 2%; }
