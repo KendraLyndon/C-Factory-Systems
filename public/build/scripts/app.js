@@ -73,6 +73,9 @@ app.controller("MapController", function($scope) {
 
 app.controller("ScrollController", function($scope, $state, $stateParams, $location, $anchorScroll) {
 
+  $scope.vm = {};
+  $scope.vm.showDropdown = false;
+
   $scope.scrollTo = function(id) {
     if ($state.current.name === "index.home") {
       $location.hash(id);
@@ -82,7 +85,12 @@ app.controller("ScrollController", function($scope, $state, $stateParams, $locat
       // $location.hash(id);
       // $anchorScroll();
     }
-  }
+  };
+
+  $scope.toggleMenu = function(){
+    console.log("toggled");
+    $scope.vm.showDropdown = !$scope.vm.showDropdown;
+  };
 
 })
 

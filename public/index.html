@@ -17,7 +17,7 @@
   </head>
   <body ng-controller="ScrollController">
     <header>
-      <nav layout="row">
+      <nav layout="row" class="main-nav">
         <div flex-gt-sm="40" flex="20" class="header-logo-container">
           <a ui-sref="index.home">
             <div class="cfs-header-logo"></div>
@@ -32,8 +32,20 @@
           <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('about')">About</a></li>
           <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('contact')">Contact Us</a></li>
         </ul>
+        <i ng-click="toggleMenu()" class="fa fa-bars fa-3x sm-menu-icon" aria-hidden="true"></i>
       </nav>
     </header>
+    <nav ng-show="vm.showDropdown" ng-mouseleave="toggleMenu()" class="sm-nav">
+      <ul class="sm-nav-list" layout="column" id="nav-mobile">
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('products')">Products</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('partners')">Partners</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('magic')">The Magic</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ui-sref="faqs">FAQs</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ui-sref="shop">Shop</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('about')">About</a></li>
+        <li flex="15" class="nav-li valign-wrapper"><a class="valign cfactory-nav-link" ng-click="scrollTo('contact')">Contact Us</a></li>
+      </ul>
+    </nav>
     <main ui-view>
     </main>
     <footer class="page-footer" id="cfs-footer">
